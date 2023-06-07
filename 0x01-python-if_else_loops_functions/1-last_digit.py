@@ -8,7 +8,7 @@ if last_d > 5:
     print("Last digit of {:s} is {:d} and is grea\
 ter than {:d}".format(y, last_d, 5))
 elif last_d == 0:
-    print("Last digit of {:s} is {:d} and is {2}".format(y, last_d, 0))
+    print("Last digit of {:s} is {:d} and is 0".format(y, last_d))
 elif last_d < 6 and last_d != 0:
     print("Last digit of {:s} is {:d} and is less\
- than {2} and not {3}".format(y, last_d, 6, 0))
+ than {2} and not 0".format(y, last_d, 6))
