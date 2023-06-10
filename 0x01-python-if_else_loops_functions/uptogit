@@ -1,4 +1,5 @@
 #!/bin/bash
 git add .
-git commit -m " my commit "
+read committ
+git commit -m "$committ"
 git push
