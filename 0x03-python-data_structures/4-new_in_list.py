@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 def new_in_list(my_list, idx, element):
-    if idx < 0 or idx >= len(my_list):
-            return my_list
+    new = my_list.copy()
+    if idx < 0 or idx >= len(new):
+            return new
     else:
-        del my_list[idx]
-        my_list.insert(idx, element)
-        return my_list
+        del new[idx]
+        new.insert(idx, element)
+        return new
