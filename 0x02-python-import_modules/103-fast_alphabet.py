@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-print("ABCDEFGHIjKLMNOPQRSTUVWXYZ")
+print(chr(65),chr(66))
