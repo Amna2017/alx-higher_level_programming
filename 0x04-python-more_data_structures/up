@@ -1,0 +1,4 @@
+#!/bin/bash
+git add .
+git commit -m " my 0x04 python "
+git push
