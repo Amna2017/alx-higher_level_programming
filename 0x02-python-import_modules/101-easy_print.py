@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-101-easy_print.py = "#pythoniscool"
+import sys; sys.stdout.write("#pythoniscool\n")
