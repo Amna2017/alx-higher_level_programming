@@ -1,0 +1,4 @@
+#!/bin/bash
+git add .
+git commit -m " my 0x17-c "
+git push
