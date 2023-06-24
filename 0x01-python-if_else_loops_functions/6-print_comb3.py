@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-for amna in range(99):
-    if (amna == 1 or amna > 1) and amna < 98:
-        amna = str(amna).zfill(2)
-        print("{:s}, ".format(amna), end="")
-print("98")
+for i in range(10):
+    for j in range(i + 1, 10):
+        print("{:d}{:d}".format(i, j), end='')
+        if i != 8 or j != 9:
+            print(", ", end='')
+
+# Print a new line at the end
+print()
