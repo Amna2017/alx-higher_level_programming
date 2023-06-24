@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "RSA-Factoring-Challenge commit "
-git push master
+git commit -m "0x01-py commit "
+git push
