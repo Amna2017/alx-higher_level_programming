@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for xx in range(99):
-    print("{:d} : {:s}".format(xx, hex(xx)))
+for i in range(99):
+    print("{} {}".format(i, hex(i)))
