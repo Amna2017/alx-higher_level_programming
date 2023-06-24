@@ -1,3 +1,9 @@
 #!/usr/bin/python3
-for n in range(ord('a'), ord('z')+1):
-    print("{:c}".format(n), end="")
+a = 97
+
+# ASCII code for lowercase 'z'
+z = 122
+
+# Loop from 'a' to 'z' and print each character
+for i in range(a, z + 1):
+    print(chr(i), end='')
