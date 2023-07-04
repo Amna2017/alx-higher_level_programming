@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-""" my new class """
+""" Write an empty class Square that defines a Rectangle """
+
+
 class Rectangle:
-""" this is simple class"""
+    """ this is simple class"""
     pass
-""" this is simple class"""
