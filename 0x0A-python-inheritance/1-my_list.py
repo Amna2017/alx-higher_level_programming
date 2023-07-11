@@ -3,6 +3,8 @@
 
 
 class MyList(object):
+    """ my class """
     def print_sorted(self):
         """  my sort func """
-        return dir(self).sort()
+        sorted_list = sorted(self)
+        print(sorted_list)
