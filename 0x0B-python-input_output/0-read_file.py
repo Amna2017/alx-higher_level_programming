@@ -4,6 +4,5 @@
 
 def read_file(filename=""):
     """my func """
-    with open('UTF8', encoding="utf-8") as f:
-        ii = f.read()
-        return ii
+    with open(filename, 'r', encoding="utf-8") as f:
+        print(f.read(), end="")
