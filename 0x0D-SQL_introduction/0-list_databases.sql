@@ -1,2 +1,2 @@
---list all data in my squal
+--list all data in my sql server
 SHOW DATABASES;
