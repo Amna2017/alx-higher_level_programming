@@ -1,5 +1,4 @@
--- create user1.
--- create user2.
---.
-SHOW GRANTS FOR 'user_0d_1'@'localhost';
-SHOW GRANTS FOR 'user_0d_2'@'localhost';
+-- create user1 create user2.
+
+SHOW GRANTS FOR asia20111@asia2011;
+SHOW GRANTS FOR asia20112@asia2011;
