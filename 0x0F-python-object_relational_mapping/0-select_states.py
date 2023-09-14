@@ -1,27 +1,28 @@
 #!/usr/bin/python3
 import MySQLdb
 
-# Function to list all states
-def list_states(username, password, database):
-        # Connect to MySQL server
-            db = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, db=database)
+import sys
 
-                # Create a cursor object to execute queries
-                    cursor = db.cursor()
+if __name__ == '__main__':
+    # Get MySQL credentials
+    username = sys.argv[1]
+    password = sys.argv[2]
+    database = sys.argv[3]
 
-                        # Execute the query to fetch all states
-                            cursor.execute("SELECT * FROM states ORDER BY id ASC")
+    # Connect to MySQL server
+    db = MySQLdb.connect(host="localhost", port=3306, user=username,
+              passwd=password, db=database)
 
-                                # Fetch all rows
-                                    rows = cursor.fetchall()
+# Create a cursor object to execute SQL queries
+            cursor = db.cursor()
 
-                                        # Display the results
-                                            for row in rows:
-                                                        print(row)
+# Execute the SQL query to fetch all states
+            cursor.execute("SELECT * FROM states ORDER BY id ASC")
+            # Fetch all rows from the result set
+            rows = cursor.fetchall()
+            # Display the results
 
-                                                            # Close the cursor and database connection
-                                                                cursor.close()
-                                                                    db.close()
-
-                                                                    # Call the function with the provided arguments
-                                                                    list_states("your_mysql_username", "your_mysql_password", "hbtn_0e_0_usa")
+            for row in rows:                                         print(row)
+           # Close the cursor and database connection
+cursor.close()
+db.close()
